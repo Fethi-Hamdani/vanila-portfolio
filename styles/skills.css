@@ -1,0 +1,13 @@
+
+
+.skl{
+    justify-content: space-evenly;
+    width: 96%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.sl{
+    width: 6%;
+}

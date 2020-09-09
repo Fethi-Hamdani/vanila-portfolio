@@ -1,0 +1,25 @@
+{
+    "contribution":[
+        {
+            "title": "GDG Chlef",
+            "description": "i'm a memeber at Google developers group of Chlef that comprises group of young adults, students, recent graduates, and professionals who are fascinated by all the technological advances the world is nowadays witnessing, and are taking the initiative to promulgate the news about Google's latest technologies to the Algerian society. ",
+            "image" :[
+                "images/contribution/gdg.JPG"
+            ]
+        },
+        {
+            "title": "Atlas",
+            "description": "Atlas is an open source cross-platform UI kit made with Flutter from InVision for designing a delightful, streamlined travel app experience.",
+            "image" :[
+                "images/contribution/at.png"
+            ]
+        },
+        {
+            "title": "Info Brains",
+            "description": "i'm a Co-Leader at Hassiba ben bouali chlef university club InfoBrains, that handels the mission of influencing, motivate and inlighten the students of diffrenet grades, and give them the chance to Think out of the box and explore the vast IT world from diffrenet prespectives.",
+            "image" :[
+                "images/contribution/info_brains.jpg"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/css.css" />
+    <title>Fethi</title>
+  </head>
+  <body onload="onStart();">
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <script>
+          function notify(tex,description,images,type,year){
+            
+            console.log(tex);
+            index = 0;
+            $(".modal-content").empty();
+            $('.modal-content').append(
+            
+            "<div class='ptxt'>"+
+            "<span class='ptt'>"+tex+"</span><br>"+
+            "<div style='overflow: auto; position: relative; height: 90%;margin-top:2%'>"+
+            "<span class='ptd'>"+description+"</span>"+
+            "</div>"+
+            "</div>"+
+            "<span class='ytd'>"+year+"</span>"+
+            "<span class='ttd'>"+type+"</span>"+
+            "<div id='d' class='d1' ><span class='dtd'><</span></div>"+
+            "<img class='pimg' src='"+images[index]+"'>"+
+            "<div id='d' class='d2' ><span class='dtd'>></span></div>"+
+            "<span class='kill'>&times;</span>");
+            $('.kill').click(function() {
+               var modal = document.getElementById("myModal");
+               modal.style.display = "none";
+                 });
+            $('.d2').click(function(){
+              index = index + 1 ;
+              if(index > images.length)
+              index=0;
+              $(".pimg").attr("src",images[index]);
+            });
+            $('.d1').click(function(){
+              index = index - 1 ;
+              if(index <= 0)
+              index=images.length-1;
+              $(".pimg").attr("src",images[index]);
+            });
+            
+          }
+        </script>
+        
+      </div>
+    
+    </div>
+
+    <!--navbar-->
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li id="app_bar" onclick="home()">home</li>
+          <li id="app_bar" onclick="about()">about me</li>
+          <li id="app_bar" onclick="projects()">projects</li>
+          <li id="app_bar" onclick="contact()">contact</li>
+        </ul>
+      </div>
+    </nav>
+    <!--navbar-->
+    
+    <!--Header start-->
+    <header class="home">
+      <div class="container">
+          <div class="col">
+            <h2 id="t1">Hello, i'm</h2>
+            <h2 id="t2">Fethi Hamdani</h2>
+            <h2 id="t3">I'm a Mobile developer</h2> 
+          </div>
+          <div id="bc"></div>
+          <img id="img" src="images/profile/avatar58.png" alt="">
+      </div>
+    </header>
+    <!--HEader end-->
+
+    <section class="about">
+        <span class="about_title">About Me</span>
+        <span class="sp3" ><span class="sp2">
+          <span class ="sp1">
+            My name is Hamdani Fethi, i'm 21 years old, Im a computer science student, I contributed to some Flutter open 
+            source projects to sharpen my skills i also managed to build a package for Flutter, i have invested every minute  
+            to learn a new information about the IT world. <br>
+            i really adore the feeling of finally fixing a BUG that took a place in my neightmares i have a massive energy for
+            programming and debugging, i didn't start programming at a young age like many of pro devs but i like challenges
+            and being exceptionnel, Im improving day per day to be a better ME
+           </span>
+        </span></span>
+       
+    </section>
+
+    <section class="projects">
+       <h2 class="toptitle">Skills</h2>
+       <div class="skl">
+        <img class="sl" src="images/skills/csharp.png" alt="">
+        <img class="sl" src="images/skills/css.png" alt="">
+        <img class="sl" src="images/skills/c.png" alt="">
+        <img class="sl" src="images/skills/dart.png" alt="">
+        <img class="sl" src="images/skills/html.png" alt="">
+        <img class="sl" src="images/skills/java.png" alt="">
+        <img class="sl" src="images/skills/js.png" alt="">
+        <img class="sl" src="images/skills/flutter.png" alt="">
+        <img class="sl" src="images/skills/javafx.png" alt="">
+        <img class="sl" src="images/skills/php.jpg" alt="">
+        <img class="sl" src="images/skills/python.png" alt="">
+       </div>
+       
+       <h2 class="toptitle">Tools</h2>
+       <div class="skl"> 
+        <img class="sl" src="images/tools/xd.png" alt="">
+        <img class="sl" src="images/tools/ps.png" alt="">
+        <img class="sl" src="images/tools/ae.jpg" alt="">
+        <img class="sl" src="images/tools/ai.png" alt="">
+        <img class="sl" src="images/tools/as.jpg" alt="">
+        <img class="sl" src="images/tools/intelij.jpg" alt="">
+        <img class="sl" src="images/tools/vs.jpg" alt="">
+       
+       </div>
+       <h2 class="toptitle" id="cn">Contribution</h2>
+       <script>
+
+         function contribution(title,description,image){
+          $("#cn").after(        
+          "<div class ='panel'>"+
+          "<div class=colum>"+
+          "<span class='tt'>"+title+"</span><br>"+
+          "<span class='td'>"+description+"</span>"+
+          "</div>"+
+          "<img class = 'clue' src='"+image+"'>"+
+          "</div>");
+         }
+         $.getJSON( "data/contribution.json", function(json) {
+             json.contribution.forEach(element => {
+              contribution(element.title,element.description,element.image)
+            });
+         });
+       </script>
+      
+       <h2 id="prjcts" class="toptitle">Projects</h2>
+        <script>
+
+          function click(row, col){
+            $('.'+row+' > #p'+col+'').click(function(){
+              $.getJSON( "data/prjects.json", function(json) {
+                
+                notify(json.projects[col].title,json.projects[col].description,json.projects[col].images,json.projects[col].type,json.projects[col].year);
+              });
+              
+              var modal = document.getElementById("myModal");
+             modal.style.display = "block";
+             });
+          }
+           $.getJSON( "data/prjects.json", function(json) {
+             for (var index = 0; index < json.projects.length; index=index+3) {
+              $(".projects").append("<div class='"+index+"' id='row' ></div>");
+              
+              fillprojects(index,index,
+              index*200,
+              json.projects[index].title,
+              json.projects[index].description,
+              json.projects[index].year,
+              json.projects[index].images);
+
+              fillprojects(index,index+1,
+              index+1*200,
+              json.projects[index+1].title,
+              json.projects[index+1].description,
+              json.projects[index+1].year,
+              json.projects[index+1].images);
+
+              fillprojects(index,index+2,
+              index+2*200,
+              json.projects[index+2].title,
+              json.projects[index+2].description,
+              json.projects[index+2].year,
+              json.projects[index+2].images);
+              click(index,index);
+              click(index,index+1);
+              click(index,index+2);  
+            
+            }
+          function fillprojects(clas,id,delay,text,description,date,paths){
+            
+            var index = 1;
+            setTimeout(function() {
+              window.setInterval(function(){
+              index = index+1;
+             if(index==paths.length)
+             index=0;
+             $("#"+id+"").attr("src",paths[index]);
+            }, 1400);
+          }, delay);
+           
+            
+            $("."+clas+"").append(
+            "<div class='ele' id='p"+id+"'>"+
+            "<span class='project_name'>"+text+"</span><br>"+
+            "<img id='"+id+"'"+
+            "style='position: relative;margin-top:12px ;width: 90%;border-radius: 12px;box-shadow: 0px 9px 99px -33px rgba(0,0,0,0.22);'"+ 
+            "src='"+paths[0]+"' >"+
+            "</div>");
+           
+             
+                window.onclick = function(event) {
+                  var modal = document.getElementById("myModal");
+                if (event.target == modal) {
+                     modal.style.display = "none";
+                  }
+              }
+            
+    
+          }
+        });
+        </script>
+    </section>
+
+    <section class="contact">
+      <h2 class="toptitle">contact</h2>
+      <div id="row">
+       
+        <script>
+          function button(color,path,id,url){
+            
+            $(".contact #row").append("<div class='con' id="+id+" style='background-color:"+color+"'>"+
+              "<img id='imag' src='"+path+"'></div>"
+              );
+             $("#"+id).click(function(){
+              window.open(url, '_blank');
+             });
+          }
+          
+          button("rgb(60, 90, 153)","images/contact/Facebook.png","fc","https://www.facebook.com/fethi.psy.3");
+          button("rgb(23, 21, 21)","images/contact/Github.png","gt","https://github.com/Fethi1");
+          button("rgb(2, 115, 178)","images/contact/LinkedIn.jpg","ln","https://www.linkedin.com/in/-fethi");
+          button("rgb(29, 161, 243)","images/contact/Twitter.png","tw","https://twitter.com/Fethi93989812");
+        </script>
+      </div>
+      <div style="margin-top: 8%;margin-bottom: 8%;">
+      <span style="font-size: 15px; font-weight: normal;letter-spacing:1px;">Have a Freelance project or Job opportunity?</span>
+      <span class="mail">mail me</span>
+      </div>
+        <span class="author">© 2020 - Developed By Hamdani Fethi</span>
+    
+    </section>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

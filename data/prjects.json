@@ -1,0 +1,76 @@
+{
+    "projects":[
+        {
+            "title": "Notes App",
+            "description": "offline note taking app made with Flutter, it contain various filtering options and themes, it is also configurable so the user can change the text's size and thinkness for both title and body seapratly, the notes also can be displayd as a Grid or a regular list, it also allow the user to share the note in social media and any other sharing option ",
+            "year": "2018",
+            "type":"Mobile Application",
+            "images" :[
+                "../images/projects/a1.png",
+                "../images/projects/a2.png",
+                "../images/projects/a3.png",
+                "../images/projects/a4.png"
+            ]
+        },
+        {
+            "title": "نور الجنة",
+            "description": "Nor el Jannah is a Tasbeeh relegious app made with Flutter. you can structure your adhkar and set a count for repeating time, you can also set a remainder notification to remind you of time of dhikr, the list of adhkar is customisable and reorderable so you can add and modify and delete adhkar from the list beside that you can change their order so you can set a certain order so the app keep switching to the next dhikr automatically without you doing it manually, also if you don't like the switching sound you can always have that on mute or vibrate which can be very usefull for people with eye sight. ",
+            "year": "2019",
+            "type":"Mobile Application",
+            "images" :[
+                "../images/projects/b1.jpg",
+                "../images/projects/b2.jpg",
+                "../images/projects/b3.jpg",
+                "../images/projects/b4.jpg",
+                "../images/projects/b5.jpg"
+            ]
+        },
+        {
+            "title": "i Read",
+            "description": "Mobile application made with Flutter for book readers (PDF reader), This app Fetch all available PDF files in the device starting from route, it allow the user to open, rename, delete, star and share a book all over the avilable sharing options, this app has aVarious Theme colors of the modern Neumorphism design, it also uses a unique Local PDF viewer built in with the app",
+            "year": "2020",
+            "type":"Mobile Application",
+            "images" :[
+                "../images/projects/c1.png",
+                "../images/projects/c2.png",
+                "../images/projects/c3.png",
+                "../images/projects/c4.png",
+                "../images/projects/c5.png",
+                "../images/projects/c6.jpg"
+            ]
+        },
+        {
+            "title": "Block Puzzle",
+            "description": "a Simple Tetris game made with Flutter, i build this app just to polish my Flutter skills and get to work with Draggable and Drag target widgets, it contains only the basics of a tetris game such as counting the score, make row/colum disapear when get full and last but not least colored blocks with before release shadow. ",
+            "year": "2019",
+            "type":"Mobile Application",
+            "images" :[
+                "../images/projects/d1.jpg",
+                "../images/projects/d2.jpg"
+            ]
+        },
+        {
+            "title": "Smart Recognizer",
+            "description": "This App made with Flutter uses an original Machine learning CNN Model (made by me) to Predict wheather the character is a handwritten arabic letter or number (digit) the model takes input throw a built in camera section, a built in drawing or images imported from the gallery, all the predections made on the app are saved locally and the wrong predections are saved seapretly in a CSV file that can be then merged with the dataset to increase the model's accuracy.",
+            "year": "2020",
+            "type":"Mobile Application",
+            "images" :[
+                "../images/projects/e1.jpg",
+                "../images/projects/e2.jpg",
+                "../images/projects/e3.jpg",
+                "../images/projects/e4.jpg",
+                "../images/projects/e4.jpg",
+                "../images/projects/e4.jpg"
+            ]
+        },
+        {
+            "title": "Shadow",
+            "description": "Shadow is a Flutter package that let you easily apply shadow or more likely a refelection of any widget using a certain configuration aspects such as the opacity of the shadow which can vary from 0 to 1 also the location of the shadow which is placed using an offset and lastly the size of the shadow that is used to scale up or down the shade of a given widget.",
+            "year": "2019",
+            "type":"Flutter Package",
+            "images" :[
+                "../images/projects/package.jpg"
+            ]
+        }
+    ]
+}
