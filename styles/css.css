@@ -584,7 +584,7 @@ header {
 /* navbar */
 #app_bar {
   letter-spacing: 2px;
-  color: 00607a;
+  color: #00607a;
   transition: transform 0.15s ease-in-out;
   font-family: Tahoma, Geneva, sans-serif;
 }
