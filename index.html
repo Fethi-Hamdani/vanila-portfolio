@@ -8,6 +8,9 @@
     <title>Fethi</title>
   </head>
   <body onload="onStart();">
+    <meta
+  name="Hamdani Fethi"           
+  content="hamdani fethi,full stack mobile developer and a student at UHBC lives in chlef">
     <div id="myModal" class="modal">
 
       <!-- Modal content -->
@@ -135,7 +138,7 @@
           "<span class='tt'>"+title+"</span><br>"+
           "<span class='td'>"+description+"</span>"+
           "</div>"+
-          "<img class = 'clue' src='"+image+"'>"+
+          "<img class = 'clue' src='"+image+"' alt=''>"+
           "</div>");
          }
          $.getJSON( "data/contribution.json", function(json) {
@@ -204,7 +207,7 @@
             $("."+clas+"").append(
             "<div class='ele' id='p"+id+"'>"+
             "<span class='project_name'>"+text+"</span><br>"+
-            "<img id='"+id+"'"+
+            "<img alt='' id='"+id+"'"+
             "style='position: relative;margin-top:12px ;width: 90%;border-radius: 12px;box-shadow: 0px 9px 99px -33px rgba(0,0,0,0.22);'"+ 
             "src='"+paths[0]+"' >"+
             "</div>");
@@ -231,7 +234,7 @@
           function button(color,path,id,url){
             
             $(".contact #row").append("<div class='con' id="+id+" style='background-color:"+color+"'>"+
-              "<img id='imag' src='"+path+" alt='"+id+"''></div>"
+              "<img id='imag' src='"+path+" alt='"+id+"'></div>"
               );
              $("#"+id).click(function(){
               window.open(url, '_blank');
