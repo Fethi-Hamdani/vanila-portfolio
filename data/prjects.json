@@ -6,10 +6,7 @@
             "year": "2018",
             "type":"Mobile Application",
             "images" :[
-                "../images/projects/a1.png",
-                "../images/projects/a2.png",
-                "../images/projects/a3.png",
-                "../images/projects/a4.png"
+                "../images/projects/a1.gif"
             ]
         },
         {
@@ -18,11 +15,7 @@
             "year": "2019",
             "type":"Mobile Application",
             "images" :[
-                "../images/projects/b1.jpg",
-                "../images/projects/b2.jpg",
-                "../images/projects/b3.jpg",
-                "../images/projects/b4.jpg",
-                "../images/projects/b5.jpg"
+                "../images/projects/b1.gif"
             ]
         },
         {
@@ -31,12 +24,7 @@
             "year": "2020",
             "type":"Mobile Application",
             "images" :[
-                "../images/projects/c1.png",
-                "../images/projects/c2.png",
-                "../images/projects/c3.png",
-                "../images/projects/c4.png",
-                "../images/projects/c5.png",
-                "../images/projects/c6.jpg"
+                "../images/projects/c1.gif"
             ]
         },
         {
@@ -45,8 +33,7 @@
             "year": "2019",
             "type":"Mobile Application",
             "images" :[
-                "../images/projects/d1.jpg",
-                "../images/projects/d2.jpg"
+                "../images/projects/d1.gif"
             ]
         },
         {
@@ -55,12 +42,7 @@
             "year": "2020",
             "type":"Mobile Application",
             "images" :[
-                "../images/projects/e1.jpg",
-                "../images/projects/e2.jpg",
-                "../images/projects/e3.jpg",
-                "../images/projects/e4.jpg",
-                "../images/projects/e4.jpg",
-                "../images/projects/e4.jpg"
+                "../images/projects/e1.gif"
             ]
         },
         {
