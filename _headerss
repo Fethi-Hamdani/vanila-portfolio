@@ -1,0 +1,8 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control: public, max-age=0,must-revalidate
+    content-encoding: gzip
+    content-type: text/html; charset:UTF-8
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

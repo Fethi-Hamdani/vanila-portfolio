@@ -231,7 +231,7 @@
           function button(color,path,id,url){
             
             $(".contact #row").append("<div class='con' id="+id+" style='background-color:"+color+"'>"+
-              "<img id='imag' src='"+path+"'></div>"
+              "<img id='imag' src='"+path+" alt='"+id+"''></div>"
               );
              $("#"+id).click(function(){
               window.open(url, '_blank');
