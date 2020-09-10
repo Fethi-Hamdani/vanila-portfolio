@@ -51,7 +51,7 @@ section {
   width: 100%;
   background-color: #00a7e7;
   font-size: 2vw;
-  color: white;
+  color: #494949;
   font-weight: lighter;
   letter-spacing: 1px;
   padding-left: 10px;
@@ -226,6 +226,7 @@ section {
   top: 5%;
   height: 90%;
   width: 60%;
+  border-radius: 5px;
   margin-right: -10%;
   float: right;
 }
