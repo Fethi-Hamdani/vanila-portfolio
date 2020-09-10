@@ -41,7 +41,7 @@ section {
   font-size: 3vw;
   font-weight: normal;
   letter-spacing: 2px;
-  color: #7ad7f0;
+  color: #00617b;
   margin-top: 20%;
 }
 
@@ -246,7 +246,7 @@ section {
   position: relative;
   font-size: 20px;
   font-weight: lighter;
-  color: rgb(175, 175, 175);
+  color: #000000a8;
   letter-spacing: 2px;
 }
 
@@ -443,7 +443,7 @@ header {
   left: -600px;
   transition: transform 0.8s ease-in-out;
   font-size: 3vw;
-  color: rgb(200, 200, 200);
+  color: #1f5d6e;
   font-weight: lighter;
   letter-spacing: 2px;
 }
@@ -464,7 +464,7 @@ header {
   transition: transform 0.8s ease-in-out;
   font-size: 3vw;
   font-weight: lighter;
-  color: rgb(200, 200, 200);
+  color: #1f5d6e;
   letter-spacing: 2px;
 }
 
@@ -749,7 +749,6 @@ header {
 }
 
 .sl {
-  width: 6%;
 }
 /* sprites */
 .sprite {

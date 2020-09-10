@@ -6,6 +6,8 @@
    
      
 function onStart(){
+  var width = ''+$('.sl').width()*0.22;
+  $('.sl').css("height" , width);
   $(window).resize(function() {
     $('#bc').css("height" , $('#bc').width());
    var width = ''+$('.skl').width()/16;
